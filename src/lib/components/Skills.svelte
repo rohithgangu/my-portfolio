@@ -25,6 +25,15 @@
 				</ul>
 			</div>
 
+            <div class="skill-category">
+				<h3>Databases</h3>
+				<ul>
+                    {#each resumeData.skills.databases as skill}
+					    <li>{skill}</li>
+                    {/each}
+				</ul>
+			</div>
+
 			<div class="skill-category">
 				<h3>Tools & Others</h3>
 				<ul>
