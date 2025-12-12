@@ -1,6 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
     import { resumeData } from '$lib/data';
+    import { base } from '$app/paths';
 
 	let isMenuOpen = false;
 	let y = 0;
@@ -18,7 +19,7 @@
 
 <header class:scrolled={y > 50}>
 	<nav class="container">
-		<a href="/" class="logo">RG<span>.</span></a>
+		<a href="{base}/" class="logo">RG<span>.</span></a>
 
 		<div
 			class="hamburger"
@@ -38,7 +39,7 @@
 			<li><a href="#projects" on:click={closeMenu}>Projects</a></li>
 			<li><a href="#contact" on:click={closeMenu}>Contact</a></li>
 			<li>
-				<a href={resumeData.personal.links.resume} class="btn btn-outline" target="_blank" rel="noopener noreferrer"
+				<a href="{base}/{resumeData.personal.links.resume}" class="btn btn-outline" target="_blank" rel="noopener noreferrer"
 					>Resume</a
 				>
 			</li>
