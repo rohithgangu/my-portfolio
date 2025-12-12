@@ -1,6 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import { resumeData } from '$lib/data';
+    import { base } from '$app/paths';
 
 	let visible = false;
 
@@ -19,7 +20,7 @@
 			</p>
 			<div class="cta-group" class:visible style="transition-delay: 0.3s">
 				<a href="#projects" class="btn btn-primary">Check out my work!</a>
-                <a href={resumeData.personal.links.resume} class="btn btn-outline" target="_blank" rel="noopener noreferrer">Resume</a>
+                <a href="{base}/{resumeData.personal.links.resume}" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Resume</a>
 			</div>
 		</div>
 	</div>

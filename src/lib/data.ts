@@ -13,7 +13,7 @@ export const resumeData = {
         links: {
             github: 'https://github.com',
             linkedin: 'https://linkedin.com',
-            resume: '/Resume.pdf'
+            resume: 'Resume.pdf'
         }
     },
     skills: {
