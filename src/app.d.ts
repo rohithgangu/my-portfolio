@@ -1,3 +1,4 @@
+/// <reference types="svelte" />
 // See https://kit.svelte.dev/docs/types#app
 // for information about these interfaces
 declare global {
@@ -10,4 +11,4 @@ declare global {
 	}
 }
 
-export {};
+export { };
